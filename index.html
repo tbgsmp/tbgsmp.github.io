@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TBGS Hosting | 24/7 Minecraft Server Setup</title>
     <style>
+        /* Implemented Space Background Image */
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0b0f19;
-            color: #f1f5f9;
+            background-image: url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,15 +21,18 @@
             min-height: 100vh;
         }
 
+        /* Added a slight background blur effect to make the text pop */
         .container {
             max-width: 650px;
             width: 100%;
             margin: 40px 20px;
-            background: #111827;
-            border: 1px solid #1f2937;
+            background: rgba(17, 24, 39, 0.90);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(55, 65, 81, 0.7);
             border-radius: 16px;
             padding: 40px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
         }
 
         header {
@@ -58,16 +65,16 @@
 
         /* Single Premium Plan Box */
         .plan-box {
-            background: #1f2937;
+            background: rgba(31, 41, 55, 0.8);
             border: 2px solid #38bdf8;
             border-radius: 12px;
             padding: 30px;
             text-align: center;
             margin-bottom: 35px;
-            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.1);
+            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.15);
         }
 
-        .plan-title {
+        .plan-name {
             font-size: 20px;
             font-weight: 700;
             color: #ffffff;
@@ -76,7 +83,7 @@
 
         .plan-uptime {
             font-size: 11px;
-            background: rgba(56, 189, 248, 0.15);
+            background: rgba(56, 189, 248, 0.2);
             color: #38bdf8;
             padding: 3px 10px;
             border-radius: 20px;
@@ -124,8 +131,8 @@
 
         /* Formal Service Terms Notice */
         .terms-section {
-            background: #0f172a;
-            border-left: 4px solid #ef4444; /* Alert color for terms boundary */
+            background: rgba(15, 23, 42, 0.85);
+            border-left: 4px solid #ef4444;
             border-radius: 0 8px 8px 0;
             padding: 20px;
             margin-bottom: 35px;
@@ -190,7 +197,7 @@
             <p class="subtitle">Get your dedicated server professionally provisioned, configured, and optimized on the mcserverhost platform with zero hassle.</p>
         </header>
 
-        <!-- Main Plan Block -->
+        <!-- Main Plan Box -->
         <div class="plan-box">
             <div class="plan-name">Full Turnkey Deployment</div>
             <div class="plan-uptime">24/7 RUNTIME GUARANTEE</div>
@@ -214,7 +221,7 @@
 
         <div class="cta-container">
             <!-- REPLACE THE LINK BELOW WITH YOUR PERMANENT SERVER INVITE LINK -->
-            <a href="https://discord.gg/r2Asdh4zt4" target="_blank" class="discord-btn">Initiate Setup Ticket</a>
+            <a href="https://discord.gg" target="_blank" class="discord-btn">Initiate Setup Ticket</a>
         </div>
 
         <footer>
