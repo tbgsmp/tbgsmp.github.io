@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TBGS Hosting | 24/7 Minecraft Server Setup</title>
     <style>
-        /* Implemented Space Background Image link from repository */
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-image: url('bg.jpg');
@@ -62,7 +61,6 @@
             line-height: 1.6;
         }
 
-        /* Dual Path Pricing Grid Layout */
         .options-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -144,18 +142,29 @@
             font-weight: bold;
         }
 
-        /* Formal Service Terms Notice */
+        /* 3-Column Policy Layout */
+        .policies-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        @media (max-width: 768px) {
+            .policies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .terms-section {
             background: rgba(15, 23, 42, 0.85);
-            border-left: 4px solid #ef4444;
             border-radius: 0 8px 8px 0;
-            padding: 20px;
-            margin-bottom: 35px;
+            padding: 15px;
             text-align: left;
         }
 
         .terms-title {
-            font-size: 14px;
+            font-size: 11px;
             font-weight: 700;
             color: #ffffff;
             text-transform: uppercase;
@@ -165,9 +174,9 @@
         }
 
         .terms-text {
-            font-size: 13px;
+            font-size: 12px;
             color: #94a3b8;
-            line-height: 1.6;
+            line-height: 1.5;
             margin: 0;
         }
 
@@ -209,13 +218,10 @@
         <header>
             <div class="logo-text">TBGS Networks</div>
             <h1>Complete 24/7 Minecraft Server Deployment</h1>
-            <p class="subtitle">Get your dedicated server professionally provisioned, configured, and optimized on the mcserverhost platform with zero hassle. Choose your preferred service track below.</p>
+            <p class="subtitle">Get your dedicated server professionally provisioned, configured, and optimized on the mcserverhost platform with zero hassle.</p>
         </header>
 
-        <!-- Two Options Grid -->
         <div class="options-grid">
-            
-            <!-- Option 1 Card -->
             <div class="option-box">
                 <div>
                     <div class="option-num">Option 01</div>
@@ -224,12 +230,11 @@
                     <ul class="specs-list">
                         <li>Complete step-by-step documentation.</li>
                         <li>Direct walkthrough explaining how to launch the host node yourself.</li>
-                        <li>Learn how to configure your own properties files & parameters.</li>
+                        <li>Learn how to configure your own properties files.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Option 2 Card -->
             <div class="option-box" style="border-color: rgba(56, 189, 248, 0.4);">
                 <div>
                     <div class="option-num">Option 02</div>
@@ -237,24 +242,32 @@
                     <div class="option-price">$5<span> flat fee</span></div>
                     <ul class="specs-list">
                         <li>Complete hands-off configuration by our deployment team.</li>
-                        <li>We handle the plugins, networks, optimization, and system setups.</li>
-                        <li>Full panel access handed to you on successful completion.</li>
+                        <li>We handle plugins, networks, optimization, and system setups.</li>
+                        <li>Full panel access handed over upon successful completion.</li>
                     </ul>
                 </div>
             </div>
-
         </div>
 
-        <!-- Support Boundary Policy Notice -->
-        <section class="terms-section">
-            <div class="terms-title">Technical Support Policy</div>
-            <p class="terms-text">
-                Regardless of the track selected, your purchase includes <strong>30 days of comprehensive, high-priority technical support</strong> covering configuration adjustments and baseline troubleshooting. Following the initial 30 days, extended inquiries shift to a low-priority queue; responses will be delayed and handled strictly on an availability-only basis.
-            </p>
-        </section>
+        <!-- 3 Policy Blocks Side-by-Side -->
+        <div class="policies-grid">
+            <div class="terms-section" style="border-left: 4px solid #ef4444;">
+                <div class="terms-title">Support Policy</div>
+                <p class="terms-text">Includes <strong>30 days of high-priority support</strong>. Afterwards, extended assistance shifts to a low-priority queue with delayed responses.</p>
+            </div>
+
+            <div class="terms-section" style="border-left: 4px solid #38bdf8;">
+                <div class="terms-title">Runtime Policy</div>
+                <p class="terms-text">Server uptime is <strong>guaranteed 24/7 for the first month</strong>. Following 30 days, your server may remain online, but 24/7 runtime is no longer guaranteed.</p>
+            </div>
+
+            <div class="terms-section" style="border-left: 4px solid #f59e0b;">
+                <div class="terms-title">Anti-Sharing</div>
+                <p class="terms-text">Our backend 24/7 methods are strictly confidential. <strong>Leaking or distributing our materials</strong> results in immediate service termination.</p>
+            </div>
+        </div>
 
         <div class="cta-container">
-            <!-- REPLACE THE LINK BELOW WITH YOUR PERMANENT SERVER INVITE LINK -->
             <a href="https://discord.gg/xt2JR5mK3h" target="_blank" class="discord-btn">Initiate Setup Ticket</a>
         </div>
 
@@ -265,3 +278,4 @@
 
 </body>
 </html>
+
