@@ -3,71 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request a Discord Server Setup</title>
+    <title>TBGS Hosting | High-Performance Minecraft Servers</title>
     <style>
+        /* Modern Gaming Tech Styling */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0b0f19;
+            color: #f1f5f9;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
-            padding: 20px;
         }
 
-        .inquiry-card {
-            background-color: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 12px;
-            padding: 40px;
-            max-width: 500px;
+        .container {
+            max-width: 800px;
             width: 100%;
+            margin: 40px 20px;
+            background: #111827;
+            border: 1px solid #1f2937;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Header Section */
+        header {
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+        }
+
+        .logo-text {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #38bdf8;
+            margin-bottom: 10px;
         }
 
         h1 {
-            color: #38bdf8;
-            font-size: 24px;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        p.subtitle {
-            color: #94a3b8;
-            font-size: 15px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-
-        .instructions {
-            text-align: left;
-            background-color: #0f172a;
-            border-left: 3px solid #38bdf8;
-            border-radius: 0 8px 8px 0;
-            padding: 15px 15px 15px 20px;
-            margin-bottom: 30px;
-        }
-
-        .instructions p {
-            margin: 0 0 10px 0;
-            font-size: 14px;
-            font-weight: 600;
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.2;
             color: #ffffff;
+            margin: 0 0 15px 0;
         }
 
-        .instructions ul {
+        .subtitle {
+            font-size: 16px;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .feature-card {
+            background: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .feature-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #38bdf8;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature-desc {
+            font-size: 14px;
+            color: #cbd5e1;
+            line-height: 1.5;
             margin: 0;
-            padding-left: 15px;
+        }
+
+        /* Inquiry Section */
+        .inquiry-section {
+            background: #0f172a;
+            border-left: 4px solid #38bdf8;
+            border-radius: 0 8px 8px 0;
+            padding: 25px;
+            margin-bottom: 40px;
+        }
+
+        .inquiry-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .inquiry-text {
+            font-size: 14px;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .steps-list {
+            margin: 0;
+            padding-left: 20px;
             color: #cbd5e1;
             font-size: 14px;
         }
 
-        .instructions li {
-            margin-bottom: 8px;
+        .steps-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Action Button */
+        .cta-container {
+            text-align: center;
         }
 
         .discord-btn {
@@ -75,12 +143,13 @@
             background-color: #5865F2;
             color: #ffffff;
             text-decoration: none;
-            padding: 14px 32px;
-            border-radius: 6px;
-            font-weight: 600;
+            padding: 16px 36px;
+            border-radius: 8px;
+            font-weight: 700;
             font-size: 16px;
+            letter-spacing: 0.5px;
             transition: background-color 0.2s ease, transform 0.1s ease;
-            box-shadow: 0 4px 12px rgba(88, 101, 242, 0.3);
+            box-shadow: 0 4px 14px rgba(88, 101, 242, 0.4);
         }
 
         .discord-btn:hover {
@@ -92,34 +161,63 @@
         }
 
         footer {
-            margin-top: 35px;
+            text-align: center;
+            margin-top: 40px;
             font-size: 12px;
-            color: #64748b;
+            color: #4b5563;
+            border-top: 1px solid #1f2937;
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="inquiry-card">
-        <h1>Professional Discord Server Creation</h1>
-        <p class="subtitle">Thank you for your interest. To request a minecraft server, which would work for an year, please join our discord server below.</p>
-        
-        <div class="instructions">
-            <p>Next Steps Upon Joining:</p>
-            <ul>
-                <li>Locate the administration team in the sidebar.</li>
-                <li>Send a direct message detailing your desired server project.</li>
-                <li>Include your preferred design style, niche, and target audience.</li>
-            </ul>
+    <div class="container">
+        <header>
+            <div class="logo-text">TBGS Networks</div>
+            <h1>High-Performance Minecraft Server Hosting</h1>
+            <p class="subtitle">Deploy your virtual worlds on enterprise-grade hardware infrastructure built for absolute zero lag, maximum uptime, and unmatched player performance.</p>
+        </header>
+
+        <section class="features-grid">
+            <div class="feature-card">
+                <div class="feature-title">⚡ Premium Hardware</div>
+                <p class="feature-desc">Powered by high-clock speed multi-core processors and NVMe SSD storage arrays for rapid chunk loading and seamless block updates.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-title">🛡️ DDoS Mitigation</div>
+                <p class="feature-desc">Enterprise-grade network filtering layers monitor traffic continuously to defend your community from unexpected malicious downtime.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-title">⚙️ Instant Provisioning</div>
+                <p class="feature-desc">Server nodes and database setups are automatically deployed the moment your network profile configuration is approved.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-title">👥 Dedicated Operations</div>
+                <p class="feature-desc">Gain continuous access to responsive, specialized support engineers ready to assist with plugin configurations and server health.</p>
+            </div>
+        </section>
+
+        <section class="inquiry-section">
+            <div class="inquiry-title">Pre-Launch Onboarding & Client Requests</div>
+            <p class="inquiry-text">We are strictly onboarding our introductory tier of server administrators, network developers, and gaming communities. To secure hardware resources, execute the following steps:</p>
+            <ol class="steps-list">
+                <li>Select the primary communication button below to request server access.</li>
+                <li>Initiate an official project inquiry or ticket thread inside our server dashboard.</li>
+                <li>Provide your target player capacity, desired RAM requirements, and server profile for a formal quote.</li>
+            </ol>
+        </section>
+
+        <div class="cta-container">
+            <!-- REPLACE THE DISCORD LINK BELOW WITH YOUR PERMANENT SERVER INVITE LINK -->
+            <a href="https://discord.gg" target="_blank" class="discord-btn">Connect to Deployment Portal</a>
         </div>
 
-        <!-- REPLACE THE LINK BELOW WITH YOUR ACTUAL DISCORD SERVER INVITE LINK -->
-        <a href="https://discord.gg/r2Asdh4zt4" target="_blank" class="discord-btn">Join Official Discord Server</a>
-
         <footer>
-            &copy; 2026 TBGS Networks. All rights reserved.
+            &copy; 2026 TBGS Networks. High-Performance Hardware Solutions. All rights reserved.
         </footer>
     </div>
 
 </body>
 </html>
+
